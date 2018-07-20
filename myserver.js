@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({limit: '100mb', extended: true }));
 
 const clientSecret = "7lLch73zik-VsKukeCjuE7e_";
 const clientId = "1006608561720-8jtfmfalcgtu8duncn2o5b08ekordhcg.apps.googleusercontent.com";
-const redirectUrl = "https://api-mytube.firebaseapp.com/auth";
+const redirectUrl = "https://my18-api.firebaseapp.com/auth";
 
 var des;
 var title;
@@ -66,7 +66,7 @@ app.post('/upload', (req, res) => {
 	function doStuff() {
 	  if(result !== undefined){
 	  	let sendResponse = result;
-		result = undefined
+		result = undefined;
 		clearInterval(interval);
 	  	res.send(sendResponse)
 	  }
